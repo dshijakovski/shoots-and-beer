@@ -7,12 +7,121 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/gameTitleShots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Shots"
+        android:textColor="#5E35B1"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameTitleBeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="Beer"
+        android:textColor="#FF7043"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gameTitleShots" />
+
+    <TextView
+        android:id="@+id/gameTitleAnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="&amp;"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/gameTitleBeer"
+        app:layout_constraintStart_toEndOf="@+id/gameTitleShots"
+        app:layout_constraintTop_toTopOf="@+id/gameTitleShots" />
+
+    <TextView
+        android:id="@+id/gameSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Totally not a Wordle knock-off"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameTitleBeer"
+        app:layout_constraintStart_toStartOf="@+id/gameTitleShots"
+        app:layout_constraintTop_toBottomOf="@+id/gameTitleAnd" />
+
+    <TextView
+        android:id="@+id/gameSubtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="We don't even know what you're talking about ;)"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/gameSubtitle"
+        app:layout_constraintStart_toStartOf="@+id/gameSubtitle"
+        app:layout_constraintTop_toBottomOf="@+id/gameSubtitle" />
+
+    <ImageView
+        android:id="@+id/imgShots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:rotation="30"
+        app:layout_constraintStart_toStartOf="@+id/gameSubtitle2"
+        app:layout_constraintTop_toBottomOf="@+id/gameSubtitle2"
+        app:srcCompat="@drawable/cocktail_shot" />
+
+    <ImageView
+        android:id="@+id/imgBeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="40dp"
+        android:rotation="-30"
+        app:layout_constraintEnd_toEndOf="@+id/gameSubtitle2"
+        app:layout_constraintTop_toBottomOf="@+id/gameSubtitle2"
+        app:srcCompat="@drawable/beer" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX=".5"
+        android:scaleY=".5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/highScoresBtn"
+        app:srcCompat="@drawable/tdl_medium_logo_black" />
+
+    <Button
+        android:id="@+id/highScoresBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="14dp"
+        android:text="High Scores"
+        app:layout_constraintEnd_toEndOf="@+id/newGameBtn"
+        app:layout_constraintStart_toStartOf="@+id/newGameBtn"
+        app:layout_constraintTop_toBottomOf="@+id/newGameBtn" />
+
+    <Button
+        android:id="@+id/newGameBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingVertical="14dp"
+        android:text="New Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgShots" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
