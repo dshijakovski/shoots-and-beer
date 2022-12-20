@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cellLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_centerInParent="true"
+    android:layout_marginHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/cellText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:text="0"
+    />
+
+    <TextView
+        android:id="@+id/cellText2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:text="0"
+    />
+
+    <TextView
+        android:id="@+id/cellText3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:text="0"
+    />
+
+    <TextView
+        android:id="@+id/cellText4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:text="0"
+    />
+
+
+</LinearLayout>

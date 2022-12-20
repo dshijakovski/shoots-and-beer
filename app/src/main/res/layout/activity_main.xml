@@ -88,18 +88,6 @@
         app:layout_constraintTop_toBottomOf="@+id/gameSubtitle2"
         app:srcCompat="@drawable/beer" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleX=".5"
-        android:scaleY=".5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/highScoresBtn"
-        app:srcCompat="@drawable/tdl_medium_logo_black" />
-
     <Button
         android:id="@+id/highScoresBtn"
         android:layout_width="0dp"
@@ -108,6 +96,7 @@
         android:paddingVertical="14dp"
         android:text="High Scores"
         app:layout_constraintEnd_toEndOf="@+id/newGameBtn"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/newGameBtn"
         app:layout_constraintTop_toBottomOf="@+id/newGameBtn" />
 
@@ -121,7 +110,21 @@
         android:paddingVertical="14dp"
         android:text="New Game"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsText" />
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Guess the number and you will win an imaginary prize!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/highScoresBtn"
+        app:layout_constraintStart_toStartOf="@+id/highScoresBtn"
         app:layout_constraintTop_toBottomOf="@+id/imgShots" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
