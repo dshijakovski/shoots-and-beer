@@ -156,7 +156,7 @@ public class NewGame extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(GameManager.HIGH_SCORES_PREFS, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        // Get high scores set from shared preferences
+        // Add new high score to shared prefs
         SimpleDateFormat dateFormat = new SimpleDateFormat(GameManager.TIMESTAMP_FORMAT);
         String timestamp = dateFormat.format(new Date());
         editor.putInt(timestamp, gameManager.attempts);

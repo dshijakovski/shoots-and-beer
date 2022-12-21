@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Random;
 
 
-
 public class GameManager {
     public static final String TIMESTAMP_FORMAT = "EEE, d MMM yyyy HH:mm";
     public static final String HIGH_SCORES_PREFS = "HighScoresPrefs";
@@ -84,7 +83,8 @@ public class GameManager {
                 "Almost there! Try again...",
                 "Use the information from the previous guesses!",
                 "Not quite! How about another try?",
-                "Nah, it isn't that easy ;)"
+                "Nah, it isn't that easy ;)",
+                "This is fun right? ...Right?"
         };
 
         int randomIndex = new Random().nextInt(messages.length);

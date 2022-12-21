@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.example.shotsandbeer.Adapters.HighScoresAdapter;
 import com.example.shotsandbeer.Models.HighScore;
@@ -60,8 +59,8 @@ public class HighScores extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        // Handle the toolbar back button click
-        onBackPressed();
+        onBackPressed(); // Handle the toolbar back button click
+
         return true;
     }
 }
