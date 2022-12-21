@@ -1,4 +1,4 @@
-package com.example.shotsandbeer;
+package com.example.shotsandbeer.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,14 +10,18 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.shotsandbeer.GameManager;
+import com.example.shotsandbeer.Models.Digit;
+import com.example.shotsandbeer.R;
+
 import java.util.ArrayList;
 
 public class AttemptsAdapter extends RecyclerView.Adapter<AttemptsAdapter.ViewHolder> {
 
     Context ctx;
-    ArrayList< ArrayList<InputCell> > cells;
+    ArrayList< ArrayList<Digit> > cells;
 
-    AttemptsAdapter(Context ctx, ArrayList< ArrayList<InputCell> > cells) {
+    public AttemptsAdapter(Context ctx, ArrayList<ArrayList<Digit>> cells) {
         this.ctx = ctx;
         this.cells = cells;
     }
@@ -46,7 +50,7 @@ public class AttemptsAdapter extends RecyclerView.Adapter<AttemptsAdapter.ViewHo
         return new ViewHolder(view);
     }
 
-    private void updateCell(TextView cellView, InputCell inputCell) {
+    private void updateCell(TextView cellView, Digit inputCell) {
         cellView.setBackground(ctx.getDrawable(inputCell.color));
         cellView.setText(inputCell.value);
     }
@@ -54,10 +58,10 @@ public class AttemptsAdapter extends RecyclerView.Adapter<AttemptsAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull AttemptsAdapter.ViewHolder holder, int position) {
 
-        ArrayList<InputCell> inputCells = cells.get(position);
+        ArrayList<Digit> inputCells = cells.get(position);
         for (int i = 0; i < holder.cells.size(); i++) {
             TextView cellView = holder.cells.get(i);
-            InputCell inputCell = inputCells.get(i);
+            Digit inputCell = inputCells.get(i);
             updateCell(cellView, inputCell);
         }
     }

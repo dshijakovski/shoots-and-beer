@@ -1,10 +1,10 @@
-package com.example.shotsandbeer;
+package com.example.shotsandbeer.Models;
 
-public class InputCell {
+public class Digit {
     public int color;
     public String value;
 
-    InputCell(int color, char value) {
+    public Digit(int color, char value) {
         this.color = color;
         this.value = String.valueOf(value);
     }
