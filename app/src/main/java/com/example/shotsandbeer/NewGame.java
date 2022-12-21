@@ -135,7 +135,7 @@ public class NewGame extends AppCompatActivity {
     private void showWinDialog() {
         // Show winning dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("You won! Congrats!");
+        builder.setTitle("That's right! I was thinking of the number " + gameManager.answer + ".");
         builder.setMessage("Attempts: " + gameManager.attempts);
         builder.setCancelable(true);
 
