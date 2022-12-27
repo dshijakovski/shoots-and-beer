@@ -19,6 +19,7 @@ public class HighScoresAdapter extends RecyclerView.Adapter<HighScoresAdapter.Vi
     Context ctx;
     ArrayList<HighScore> highScores;
 
+    // REVIEW: context is not used anywhere here, so it is just dead code - remove it
     public HighScoresAdapter(Context ctx, ArrayList<HighScore> highScores) {
         this.ctx = ctx;
         this.highScores = highScores;

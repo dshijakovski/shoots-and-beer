@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".HighScores">
 
+    <!-- REVIEW: There are hardcoded sizes and colors here - you want to stick
+     to a design system, I will add a dimens file here to show you the default one we use in the Android Team,
+     it is also a bit similar in web if you have heard of Tailwind CSS and it's spacing/sizing system - recommend checking it out! -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/highScoresList"
         android:layout_width="0dp"
@@ -18,6 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/highScoresTitle" />
 
+    <!-- REVIEW: Hardcoded strings in Android are a big no-no: use the resources file for them,
+    makes localization easy, it's also one of the warnings Android Studio gives you -->
     <TextView
         android:id="@+id/highScoresTitle"
         android:layout_width="wrap_content"
