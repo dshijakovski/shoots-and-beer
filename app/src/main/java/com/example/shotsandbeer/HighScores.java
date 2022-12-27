@@ -17,6 +17,10 @@ import java.util.Comparator;
 import java.util.Map;
 
 public class HighScores extends AppCompatActivity {
+    // REVIEW: Why do you have an extra space here in some classes and others not?
+    // keep it consistent - either always have it or don't have useless spaces at the start and end
+    // in web, we have Prettier to take care of that for us (amazing tool :D), here setting up autoformatting tools
+    // is a bit more involved, but good standards still should be kept for
 
     RecyclerView highScoresRecyclerView;
 

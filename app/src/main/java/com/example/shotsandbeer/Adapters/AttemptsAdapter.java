@@ -51,6 +51,8 @@ public class AttemptsAdapter extends RecyclerView.Adapter<AttemptsAdapter.ViewHo
     }
 
     private void updateCell(TextView cellView, Digit inputCell) {
+        // REVIEW: there is a setBackgroundResource method, so once again, you do not need context
+        // it is also better to just get the context from the view itself instead of passing it in
         cellView.setBackground(ctx.getDrawable(inputCell.color));
         cellView.setText(inputCell.value);
     }

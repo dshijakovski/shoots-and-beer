@@ -1,5 +1,7 @@
 package com.example.shotsandbeer;
-
+// REVIEW: Package name is “com.example”, changing this later is pretty painful, so usually we
+// have it as com.testdevlab, but in case of this junior task, it is best to put your name there:
+// com.danielshijakovski.shotsandbeer for example
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
